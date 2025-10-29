@@ -1,0 +1,262 @@
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+}
+
+.info {
+    /* padding-top: 5rem; */
+    line-height: 1.3;
+    
+}
+.info p {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
+}
+.hero-img {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.hero img{
+    width: 70%;
+}
+
+.skill {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    
+}
+.name{
+    font-size: 7rem;
+    color: white;
+}
+.hero-action{
+    display: flex;
+    justify-content: start;
+    gap: 5.5rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 10rem;
+}
+.hero-connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 4.5rem;
+    border-radius: 5rem;
+    border: 0.2rem solid #DF8908  ;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+.hero-connect:hover{
+    border: 0.2rem solid white;
+}
+.hero-resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 7.5rem;
+    border-radius: 5rem;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+.hero-resume:hover{
+    border-color: #B415FF;
+}
+
+
+/* responsive code */
+
+
+@media (max-width: 1400px) {
+    /* Extra large screens (big desktops / 4K) */
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 1350px) {
+ html {
+        font-size: 50%;
+    }
+   
+}
+
+@media (max-width: 1270px) {
+    .name {
+        font-size: 6rem;
+    }
+    .skill {
+        font-size: 4.3rem;
+    }
+    .info p {
+        font-size: 1.8rem;
+    }
+    .hero-connect{
+    padding: 2rem 3rem;  
+}
+    .hero-resume{
+    padding: 2rem 6rem;  
+}
+.hero-action{
+    font-size: 2.2rem;
+}
+}
+
+@media (max-width: 1200px) {
+
+    /* Large screens (desktops / laptops) */
+    html {
+        font-size: 55%;
+    }
+    .name {
+        font-size: 5.5rem;
+    }
+    .skill {
+        font-size: 4rem;
+    }
+    .info p {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media (max-width: 1175px) {
+
+ .name {
+        font-size: 5.2rem;
+    }
+    .skill {
+        font-size: 3.8rem;
+    }
+    .hero img {
+        /* width: 60%; */
+    }
+ .hero-connect{
+    padding: 1.8rem 2.8rem;  
+}
+    .hero-resume{
+    padding: 1.8rem 5.5rem;  
+}
+.hero-action {
+    margin-top: 6rem;
+      font-size: 2rem;
+}
+
+
+}
+
+@media (max-width: 1085px) {
+     .hero-connect{
+    padding: 1.5rem 2.5rem;  
+}
+    .hero-resume{
+    padding: 1.5rem 5rem;  
+}
+.hero-action {
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+}
+
+@media (max-width: 992px) {
+
+    /* Medium screens (tablets / small laptops) */
+    html {
+        font-size: 60%;
+    }
+    .hero img {
+        width: 30%;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .hero-img {
+         justify-content: start;
+        order: 1;
+    }
+    .hero-content {
+        justify-content: end;
+        order: 2;
+    }
+     .hero-connect{
+    padding: 1.3rem 2.3rem;  
+}
+    .hero-resume{
+    padding: 1.3rem 4.5rem;  
+}
+.hero-action{
+    font-size: 2rem;
+}
+
+}
+
+
+@media(max-width : 768px){
+    .hero img{
+        width: 23rem;
+    }
+    .hero h1 span{
+        width: 100%;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    .hero h1{
+        font-size: 4rem;
+    }
+    .hero-action{
+        gap: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 5rem;
+    }
+    .hero-connect{
+        padding: 1.3rem 2.3rem;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+}
+    .hero-resume{
+        padding: 1.3rem 4.5rem;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+}
+}
+ 
+
+
+
+
+@media (max-width: 576px) {
+    /* Extra small screens (phones) */
+}
+
+
+
+
