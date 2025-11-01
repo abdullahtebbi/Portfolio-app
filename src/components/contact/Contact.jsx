@@ -56,9 +56,9 @@ const Contact = () => {
         </div>
         <form className="contact-right">
           <label htmlFor="">Your Name</label>
-          <input type="text" placeholder='Enter your name' name='name' />
+          <input type="text" placeholder='Enter your name' name='name' autoComplete='off' />
           <label htmlFor="">Your Email</label>
-          <input type="email" name="email" placeholder='Enter your email' />
+          <input type="email" name="email" placeholder='Enter your email' autoComplete='off'/>
           <label htmlFor="">Enter your message here</label>
           <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
           <button type='submit' className="contact-submit">Submit now</button>

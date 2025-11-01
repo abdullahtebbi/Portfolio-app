@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.5rem;
+    padding: 11rem 0 10rem 0;
 }
 
 .info {
@@ -11,11 +12,11 @@
     
 }
 .info p {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    color: white;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: #D8D8D8;
     text-transform: capitalize;
-    letter-spacing: .1rem;
+    letter-spacing: .05rem;
     margin-top: 1rem;
 }
 .hero-img {
